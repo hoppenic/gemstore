@@ -17,10 +17,10 @@
 	{{gem.description}}
 </div>
 <div *ngIf="tab === 2">
-	
+	{{gem.colors}}
 </div>
 <div *ngIf="tab === 3">
-	
+	<app-reviews [gem]="gem">  </app-reviews>
 </div>
 
 

@@ -18,7 +18,15 @@ export class HomeComponent implements OnInit {
         wowfactor: '9/10 Wowfactor',
         inventory: 3,
         fullImagePath: './assets/gem-01.gif',
-        colors:["red","blue","green","yellow"]
+        colors:["red","blue","green","yellow"],
+        reviews: [{
+            id:1,
+            rating:5,
+            author:'person@gmail.com',
+            createddate:'04/25/2018',
+            body: 'Would not wear to a dog fight'
+            
+        }]
     },
         {
         id: 2,
@@ -28,7 +36,15 @@ export class HomeComponent implements OnInit {
         wowfactor: '8/10 Wowfactor',
         inventory: 5,
         fullImagePath: './assets/gem-02.gif',
-        colors:["red","blue","green","yellow"]
+        colors:["red","blue","green","yellow"],
+        reviews: [{
+            id:1,
+            rating:9,
+            author:'person2@gmail.com',
+            createddate:'02/25/2018',
+            body: 'This tastes like cat food'  
+            
+            }]
             
     },
         {
@@ -39,7 +55,14 @@ export class HomeComponent implements OnInit {
         wowfactor: '12/10 Wowfactor',
         inventory: 20,
         fullImagePath: './assets/gem-03.gif',
-        colors:["red","blue","green","yellow"]
+        colors:["red","blue","green","yellow"],
+        reviews: [{
+            id:1,
+            rating:8,
+            author:'person3@gmail.com',
+            createddate:'01/25/1983',
+            body: 'Made me invincible'
+                   
         
          }]
     
