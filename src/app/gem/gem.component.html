@@ -4,6 +4,7 @@
 <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="{{gem.fullImagePath}}" alt="Dodecahedron">
   <div class="card-body">
+    <app-tabs [gem]="gem"></app-tabs>  
     <h5> {{gem.id}}</h5>  
     <h5> {{gem.name}}</h5> 
     <h5> {{gem.price | currency}} </h5>
@@ -13,8 +14,9 @@
       <ul>
       <li *ngFor="let color of gem.colors">{{color}}</li>     
       </ul>
-    <a href="#" class="btn btn-primary">Find Out More</a>
-    <button *ngIf="gem.inventory >0"class="btn btn-default">Add to Cart</button>
+    
+     
+    <button (click)="gem.inventory=gem.inventory-1" *ngIf="gem.inventory >0"class="btn btn-default">Add to Cart</button>
     <button *ngIf="gem.inventory<=0" class="btn btn-danger" disabled>Sold Out</button>
   </div>
 </div>

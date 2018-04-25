@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
         price: 99.99,
         description: 'Some gems have magical powers and can turn you into a wizard.  Dodecahedron is one of those gems.',
         wowfactor: '9/10 Wowfactor',
-        inventory: 10,
+        inventory: 3,
         fullImagePath: './assets/gem-01.gif',
         colors:["red","blue","green","yellow"]
     },
@@ -24,20 +24,20 @@ export class HomeComponent implements OnInit {
         id: 2,
         name: 'Pentagonal',
         price: 111.11,
-        description: 'This gem is proven to fight against robots',
+        description: 'This gem grants the holder the ability to communicate with corn and other cash crops.',
         wowfactor: '8/10 Wowfactor',
-        inventory:0,
+        inventory: 5,
         fullImagePath: './assets/gem-02.gif',
         colors:["red","blue","green","yellow"]
             
     },
         {
         id: 3,
-        name: 'Octagonal',
-        price: 7.99,
-        description: 'This is a fancy gem from the future.',
-        wowfactor: '6/10 Wowfactor',
-        inventory: 89,
+        name: 'Triangular',
+        price: 1234.99,
+        description: 'This is a fancy gem sent back in time by human rebels to help combat the coming alien invasion.',
+        wowfactor: '12/10 Wowfactor',
+        inventory: 20,
         fullImagePath: './assets/gem-03.gif',
         colors:["red","blue","green","yellow"]
         
