@@ -1,6 +1,7 @@
 
 
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
@@ -10,6 +11,7 @@ import { GemComponent } from './gem/gem.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { AvatarService } from './avatar.service';
 
 
 @NgModule({
@@ -23,9 +25,10 @@ import { ReviewsComponent } from './reviews/reviews.component';
   ],
   imports: [
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AvatarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

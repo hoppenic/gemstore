@@ -1,5 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 
+import{Md5} from 'ts-md5/dist/md5';
+
 import{GemModel} from '../gem-model';
 
 
@@ -14,19 +16,19 @@ export class ReviewsComponent implements OnInit {
     
     newReview: ReviewModel;
 
-  constructor() { }
+  constructor(private avatarService: AvatarService) { }
 
   ngOnInit() {
       this.newReview={
           id:-1,
           createddate: ' ',
           body: ' ',
-          rating: 5,
+          rating: 0,
           author: ' '
           
-          
-      }
+        }
       
+
      
       }
     
