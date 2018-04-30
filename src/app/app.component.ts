@@ -4,11 +4,12 @@ import{CartItemModel} from './cart-item-model';
 import{HttpClient,HttpHeaders} from '@angular/common/http'
 
 @Component({
-    selector: 'app-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+   
     
     cart: CartModel={
       totalprice:0,
