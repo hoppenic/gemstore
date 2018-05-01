@@ -16,5 +16,8 @@ export class GemComponent implements OnInit {
 
   ngOnInit() {
   }
+    
+    
 
 }
+

@@ -13,6 +13,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { AvatarService } from './avatar.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { CartComponent } from './cart/cart.component';
+import { AccountComponent } from './account/account.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { AppRoutingModule } from './/app-routing.module';
     GemComponent,
     NavbarComponent,
     TabsComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    CartComponent,
+    AccountComponent
   ],
   imports: [
     FormsModule,
